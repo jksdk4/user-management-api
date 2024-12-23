@@ -8,6 +8,8 @@ namespace UserManagementAPI.Models
         
         [StringLength(100, MinimumLength = 1)]
         required public string Name { get; set; }
+
+        [EmailAddress]
         required public string Email { get; set; }
     }
 }

@@ -68,7 +68,6 @@ namespace UserManagementAPI.Middleware
 
                 var modifiedResponseBodyJson = JsonSerializer.Serialize(modifiedResponseBody);
 
-                // Set the response content type to application/json
                 context.Response.ContentType = "application/json";
 
                 // Write the modified response body

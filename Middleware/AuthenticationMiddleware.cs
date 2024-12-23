@@ -43,7 +43,6 @@ namespace UserManagementAPI.Middleware
 
         private bool ValidateToken(string token)
         {
-            // Implement your token validation logic here
             return token == "valid-token"; // Example validation
         }
     }
