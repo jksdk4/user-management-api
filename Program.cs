@@ -15,9 +15,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
-// Register the request counter middleware
+
 app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseMiddleware<AuthenticationMiddleware>();
 app.UseMiddleware<LoggingMiddleware>();
